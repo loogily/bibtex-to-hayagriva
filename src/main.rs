@@ -1,5 +1,7 @@
 use std::{collections::HashMap, fs::File, io::{BufReader, Read}, process::exit};
 
+use regex::Regex;
+
 fn get_input(arg: &String) -> biblatex::Bibliography {
     let content = match std::fs::read_to_string(arg) {
         Ok(c) => { c },
@@ -10,6 +12,22 @@ fn get_input(arg: &String) -> biblatex::Bibliography {
         Err(_) => { eprintln!("Invalid bibTeX input."); exit(-1); },
         Ok(b) => { b }
     }
+}
+
+fn get_id(hg: &hayagriva::Entry) -> String {
+    let title = hg.title().unwrap().to_string();
+    let author = hg.authors().unwrap()[0].name.clone().to_lowercase();
+    
+    let title = title.replace(" ", "-");
+    let re = Regex::new(r"[^a-zA-Z0-9\-]").unwrap();
+    let title = re.replace_all(title.as_str(), "-").to_string();
+    let re = Regex::new(r"-+").unwrap();
+    let title = re.replace_all(title.as_str(), "-").to_string();
+    let re = Regex::new(r"[^-]*-([^-]*-){2}").unwrap();
+    let title = re.find(title.as_str()).unwrap().as_str().to_string();
+    let title = title.to_lowercase()[0..(title.len()-1)].to_string();
+
+    std::format!("{title}-{author}")
 }
 
 fn main() {
@@ -27,9 +45,8 @@ fn main() {
         Ok(hg) => { hg },
     };
 
-    
     let mut citation = HashMap::new();
-    citation.insert(hg.key().to_string(), hg);
+    citation.insert(get_id(&hg), hg);
     let yaml = serde_saphyr::to_string(&citation).unwrap();
     print!("{yaml}");
 
