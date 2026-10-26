@@ -24,4 +24,9 @@ fn main() {
     citation.insert(hg.key().to_string(), hg);
     let yaml = serde_saphyr::to_string(&citation).unwrap();
     println!("{yaml}");
+
+    if args.len() < 3 { return; }
+    println!("  topic: {}", &args[2]);
+    if args.len() < 4 { return; }
+    println!("  relevance: {}", &args[3]);
 }
