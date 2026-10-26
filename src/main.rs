@@ -1,4 +1,4 @@
-use std::{collections::HashMap, fs::File, io::{BufReader, Read}, process::exit};
+use std::{collections::HashMap, process::exit};
 
 use regex::Regex;
 
