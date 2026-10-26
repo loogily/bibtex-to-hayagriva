@@ -1,4 +1,16 @@
-use std::{collections::HashMap, process::exit};
+use std::{collections::HashMap, fs::File, io::{BufReader, Read}, process::exit};
+
+fn get_input(arg: &String) -> biblatex::Bibliography {
+    let content = match std::fs::read_to_string(arg) {
+        Ok(c) => { c },
+        Err(_) => { arg.clone() },
+    };
+
+    match biblatex::Bibliography::parse(&content) {
+        Err(_) => { eprintln!("Invalid bibTeX input."); exit(-1); },
+        Ok(b) => { b }
+    }
+}
 
 fn main() {
     let args = std::env::args().collect::<Vec<String>>();
@@ -7,12 +19,8 @@ fn main() {
         eprintln!("Too few arguments");
         exit(-1);
     }
-
-    let bibtex_in = match biblatex::Bibliography::parse(&args[1]) {
-        Err(_) => { eprintln!("Invalid bibTeX input."); exit(-1); },
-        Ok(b) => {b}
-    }.into_vec();
-
+    
+    let bibtex_in = get_input(&args[1]).into_vec();
 
     let hg: hayagriva::Entry = match (&bibtex_in[0]).try_into() {
         Err(_) => { eprintln!("Failed to convert."); exit(-1); },
