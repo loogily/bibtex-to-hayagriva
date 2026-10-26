@@ -8,10 +8,10 @@ fn main() {
         exit(-1);
     }
 
-    let bibtex_in = dbg!(match biblatex::Bibliography::parse(&args[1]) {
+    let bibtex_in = match biblatex::Bibliography::parse(&args[1]) {
         Err(_) => { eprintln!("Invalid bibTeX input."); exit(-1); },
         Ok(b) => {b}
-    }.into_vec());
+    }.into_vec();
 
 
     let hg: hayagriva::Entry = match (&bibtex_in[0]).try_into() {
@@ -23,7 +23,7 @@ fn main() {
     let mut citation = HashMap::new();
     citation.insert(hg.key().to_string(), hg);
     let yaml = serde_saphyr::to_string(&citation).unwrap();
-    println!("{yaml}");
+    print!("{yaml}");
 
     if args.len() < 3 { return; }
     println!("  topic: {}", &args[2]);
