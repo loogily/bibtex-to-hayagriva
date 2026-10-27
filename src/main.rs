@@ -54,4 +54,6 @@ fn main() {
     println!("  topic: {}", &args[2]);
     if args.len() < 4 { return; }
     println!("  relevance: {}", &args[3]);
+
+    println!("");
 }
