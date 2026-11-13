@@ -50,10 +50,15 @@ fn main() {
     let yaml = serde_saphyr::to_string(&citation).unwrap();
     print!("{yaml}");
 
-    if args.len() < 3 { return; }
-    println!("  topic: {}", &args[2]);
-    if args.len() < 4 { return; }
-    println!("  relevance: {}", &args[3]);
+    let mut topic = "null".to_string(); 
+    if args.len() >= 3 { topic = args[2].clone(); }
+    println!("  topic: {}", topic);
+
+    let mut relevance: String = "3".to_string();
+    if args.len() >= 4 { relevance = args[3].clone(); }
+    println!("  relevance: {}", relevance);
+    
+    println!("  read: false");
 
     println!("");
 }
