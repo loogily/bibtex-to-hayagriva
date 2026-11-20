@@ -24,8 +24,10 @@ fn get_id(hg: &hayagriva::Entry) -> String {
     let re = Regex::new(r"_+").unwrap();
     let title = re.replace_all(title.as_str(), "_").to_string();
     let re = Regex::new(r"[^_]*_([^_]*_){2}").unwrap();
-    let title = re.find(title.as_str()).unwrap().as_str().to_string();
-    let title = title.to_lowercase()[0..(title.len()-1)].to_string();
+    let title = match re.find(title.as_str()) {
+        Some(t) => t.as_str().to_lowercase()[0..(title.len()-1)].to_string(),
+        None    => title.to_lowercase(),
+    };
 
     std::format!("{title}_{author}")
 }
