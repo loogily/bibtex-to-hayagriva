@@ -25,7 +25,7 @@ fn get_id(hg: &hayagriva::Entry) -> String {
     let title = re.replace_all(title.as_str(), "_").to_string();
     let re = Regex::new(r"[^_]*_([^_]*_){2}").unwrap();
     let title = match re.find(title.as_str()) {
-        Some(t) => t.as_str().to_lowercase()[0..(title.len()-1)].to_string(),
+        Some(t) => t.as_str().to_lowercase()[0..(t.len()-1)].to_string(),
         None    => title.to_lowercase(),
     };
 
