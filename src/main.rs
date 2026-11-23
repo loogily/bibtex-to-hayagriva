@@ -1,6 +1,7 @@
 use std::{collections::HashMap, process::exit};
 
 use regex::Regex;
+use chrono::prelude::Local;
 
 fn get_input(arg: &String) -> biblatex::Bibliography {
     let content = match std::fs::read_to_string(arg) {
@@ -51,6 +52,9 @@ fn main() {
     citation.insert(get_id(&hg), hg);
     let yaml = serde_saphyr::to_string(&citation).unwrap();
     print!("{yaml}");
+
+    let time = Local::now();
+    println!("  added_at: {}", time.to_string());
 
     let mut topic = "null".to_string(); 
     if args.len() >= 3 { topic = args[2].clone(); }
