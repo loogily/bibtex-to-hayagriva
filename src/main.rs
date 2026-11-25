@@ -58,7 +58,7 @@ fn main() {
 
     let mut topic = "null".to_string(); 
     if args.len() >= 3 { topic = args[2].clone(); }
-    println!("  topic: \n  - {}", topic);
+    println!("  topic: \n  - \"{}\"", topic);
 
     let mut relevance: String = "3".to_string();
     if args.len() >= 4 { relevance = args[3].clone(); }
