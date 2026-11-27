@@ -43,7 +43,7 @@ fn construct_string(citation: HashMap<String, Entry>, config: Configuration) -> 
 	let yaml = serde_saphyr::to_string(&citation).unwrap();
 
 	let topics = if !config.topic.is_empty() {
-		format!("  topics: \n  - {}", config.topic.join("\n  - "))
+		format!("topics: \n  - {}", config.topic.join("\n  - "))
 	} else {
 		String::new()
 	};
@@ -51,7 +51,8 @@ fn construct_string(citation: HashMap<String, Entry>, config: Configuration) -> 
 	format!(r#"
 {yaml}  added_at: {}
   relevance: {}
-  read: false{}
+  read: false
+  {}
 "#, 
 		Local::now().to_string(),
 		config.relevance.unwrap_or("2".to_string()),
