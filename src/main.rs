@@ -44,7 +44,7 @@ fn main() {
     let bibtex_in = get_input(&args[1]).into_vec();
 
     let hg: hayagriva::Entry = match (&bibtex_in[0]).try_into() {
-        Err(_) => { eprintln!("Failed to convert."); exit(-1); },
+        Err(e) => { eprintln!("Failed to convert: {:?}", e); exit(-1); },
         Ok(hg) => { hg },
     };
 
