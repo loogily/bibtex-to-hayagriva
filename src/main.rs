@@ -1,25 +1,13 @@
 mod args;
 
-use std::{collections::HashMap, process::exit, fs::read_to_string};
+use std::{collections::HashMap, fs::read_to_string};
 
 use clap::Parser;
 use regex::Regex;
 use chrono::prelude::Local;
-use hayagriva::{Entry, Library, io::from_yaml_str};
+use hayagriva::{Entry, Library, io::{from_yaml_str, from_biblatex_str}};
 
 use crate::args::Configuration;
-
-fn get_input(arg: &String) -> biblatex::Bibliography {
-    let content = match std::fs::read_to_string(arg) {
-        Ok(c) => { c },
-        Err(_) => { arg.clone() },
-    };
-
-    match biblatex::Bibliography::parse(&content) {
-        Err(_) => { eprintln!("Invalid bibTeX input."); exit(-1); },
-        Ok(b) => { b }
-    }
-}
 
 fn get_id(hg: &hayagriva::Entry) -> String {
     let title = hg.title().unwrap().to_string();
@@ -39,7 +27,7 @@ fn get_id(hg: &hayagriva::Entry) -> String {
     std::format!("{title}_{author}")
 }
 
-fn construct_string(citation: HashMap<String, Entry>, config: Configuration) -> String {
+fn construct_string(citation: HashMap<String, &Entry>, config: Configuration) -> String {
 	let yaml = serde_saphyr::to_string(&citation).unwrap();
 
 	let topics = if !config.topic.is_empty() {
@@ -63,15 +51,11 @@ fn construct_string(citation: HashMap<String, Entry>, config: Configuration) -> 
 fn main() {
 	let config = Configuration::parse();
     
-    let bibtex_in = get_input(&config.bib_path).into_vec();
-
-    let hg: hayagriva::Entry = match (&bibtex_in[0]).try_into() {
-        Err(e) => { eprintln!("Failed to convert: {:?}", e); exit(-1); },
-        Ok(hg) => { hg },
-    };
+    let hg = from_biblatex_str(&read_to_string(&config.bib_path).unwrap()).unwrap();
+    let entry = hg.nth(0).unwrap();
 
     let mut citation = HashMap::new();
-    let mut id = get_id(&hg);
+    let mut id = get_id(entry);
     
     config.hg_path.as_ref().inspect(|hg_path| {
 	    let existing_hg = from_yaml_str(&read_to_string(hg_path).unwrap()).unwrap();
@@ -80,12 +64,13 @@ fn main() {
 		let mut suffix = 0;
 		let original_id = id.clone();
 		while test(&existing_hg, &id) { 
-			eprintln!("WARNING: duplicate ID found: {}", id);
+			eprint!("WARNING: duplicate ID found: `{}`. ", id);
 			suffix += 1; 
 			id = format!("{}_{}", original_id, suffix);
+			eprintln!("Replacing with: `{}`", id);
 		}
     });
 
-    citation.insert(id, hg);
+    citation.insert(id, entry);
     println!("{}", construct_string(citation, config));
 }
