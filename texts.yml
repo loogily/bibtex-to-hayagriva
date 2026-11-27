@@ -1,0 +1,1043 @@
+a_review_on_zhang:
+  type: article
+  title: A review on principles and applications of scanning thermal microscopy (SThM)
+  author:
+  - Zhang, Yun
+  - Zhu, Wenkai
+  - Hui, Fei
+  - Lanza, Mario
+  - Borca-Tasciuc, Theodorian
+  - Muñoz Rojo, Miguel
+  date: 2020
+  page-range: '1900892'
+  parent:
+    type: periodical
+    title: Advanced functional materials
+    publisher: Wiley Online Library
+    issue: 18
+    volume: 30
+  topic:
+  - "00"
+  relevance: 4
+  read: true 
+
+scanning_thermal_microscopy_gomes:
+  type: article
+  title: Scanning thermal microscopy
+  author:
+  - Gomès, Séverine
+  - Assy, Ali
+  - Chapuis, Pierre-Olivier
+  date: 2015
+  parent:
+    type: periodical
+  topic:
+  - "00"
+  relevance: 4
+  read: true  
+
+a_simplified_one_parallel_andrade:
+  type: article
+  title: A Simplified One-Parallel-Element Automatic Impedance-Matching Network Applied to Electromagnetic Acoustic Transducers Driving
+  author:
+  - Andrade, Joao Pedro T.
+  - Bazan, Pedro Leon F. C.
+  - Medeiros, Vivian S.
+  - Kubrusly, Alan C.
+  date: 2023-12
+  page-range: 378-395
+  serial-number:
+    doi: 10.3390/automation4040022
+  parent:
+    type: periodical
+    title: AUTOMATION
+    issue: 4
+    volume: 4
+  relevance: 1
+  read: true
+  topic:
+  - 01.ab.00
+
+scanning_thermal_microscopy_bodzenta:
+  type: article
+  title: >-
+    Scanning thermal microscopy and its applications for quantitative thermal
+    measurements
+  author:
+  - Bodzenta, Jerzy
+  - Kazmierczak-Balata, Anna
+  date: "2022-10-14"
+  serial-number:
+    doi: 10.1063/5.0091494
+    issn: 0021-8979
+  parent:
+    type: periodical
+    title: JOURNAL OF APPLIED PHYSICS
+    issue: 14
+    volume: 132
+  topic:
+  - "02"
+  relevance: 2
+  read: false
+
+single_event_burnout_he:
+  type: article
+  title: Single-event burnout evaluation in high voltage lateral and quasi-lateral
+  author:
+  - He, Z.
+  - Ponomarev, I.
+  - Chow, T. P.
+  date: 2025-05
+  serial-number:
+    doi: 10.1016/j.diamond.2025.112347
+    issn: 0925-9635
+  parent:
+    type: periodical
+    title: DIAMOND AND RELATED MATERIALS
+    volume: 155
+  topic:
+  - 02.ab.00
+  relevance: 3
+  read: false
+
+preparation_and_performance_zhang:
+  type: article
+  title: >-
+    Preparation and Performance of High-Thermal-Conductivity Composite Materials
+    for Online Monitoring Equipment of Ultra-High Voltage Bushings
+  author:
+  - Zhang, Jie
+  - Guo, Longgang
+  - Li, Lin
+  - Qin, Jian
+  - Zhang, Zhiqiang
+  - Yang, Zefeng
+  date: "2026-02-12"
+  serial-number:
+    doi: 10.3390/inventions11010017
+  parent:
+    type: periodical
+    title: INVENTIONS
+    issue: 1
+    volume: 11
+  topic:
+  - 02.ab.00
+  relevance: 3
+  read: false
+
+highly_effective_and_wang:
+  type: article
+  title: HIGHLY EFFECTIVE AND FLEXIBLE DEVICE DESIGNS FOR HIGH-VOLTAGE ESD PROTECTION
+  author:
+  - Wang, Leyan
+  - Chen, Can
+  - Jiang, Yulei
+  date: 2025
+  editor:
+  - Claeys, C
+  - Zhang, B
+  - Yu, B
+  - Bai, P
+  - Huang, Q
+  - Li, X
+  - Liang, SX
+  - Lung, HL
+  - Pang, L
+  - Qian, W
+  - Qu, X
+  - Shi, X
+  - Tang, J
+  - Zhang, Y
+  - Zhou, P
+  - Zhuo, C
+  serial-number:
+    doi: 10.1109/CSTIC64481.2025.11017935
+    isbn: 979-8-3315-1336-8; 979-8-3315-1335-1
+  note: >-
+    2025 Conference of Science and Technology of Integrated Circuits-CSTIC,
+    Shanghai, PEOPLES R CHINA, MAR 24-25, 2025
+  parent:
+    type: proceedings
+    title: 2025 CONFERENCE OF SCIENCE AND TECHNOLOGY OF INTEGRATED CIRCUITS, CSTIC
+    organization: SEMI; Electron Devices Society
+  topic:
+  - 02.ab.00
+  relevance: 3
+  read: false
+
+overvoltage_robustness_of_zhang:
+  type: article
+  title: >-
+    Overvoltage Robustness of p-Gate GaN HEMTs in High Frequency Switching up to
+    Megahertz
+  author:
+  - Zhang, Ruizhe
+  - Song, Qihao
+  - Li, Qiang
+  - Zhang, Yuhao
+  date: 2023-05
+  page-range: 6063-6072
+  serial-number:
+    doi: 10.1109/TPEL.2023.3237985
+    issn: 0885-8993
+  parent:
+    type: periodical
+    title: IEEE TRANSACTIONS ON POWER ELECTRONICS
+    issue: 5
+    volume: 38
+  topic:
+  - 02.ab.00
+  relevance: 3
+  read: false
+
+dependence_of_single_lai:
+  type: article
+  title: >-
+    Dependence of single-pulse avalanche ruggedness in μH inductor circuit on SiC
+    MOSFETs structure
+  author:
+  - Lai, Lingling
+  - Liu, Zhixin
+  - Cui, Yingxin
+  - Zeng, Fanpeng
+  - Huang, Litian
+  - Gong, Shoulai
+  - Cheong, Kuan Yew
+  - Han, Jisheng
+  date: "2026-06-01"
+  serial-number:
+    doi: 10.1016/j.mee.2026.112453
+    issn: 0167-9317
+  parent:
+    type: periodical
+    title: MICROELECTRONIC ENGINEERING
+    volume: 304
+  topic:
+  - 02.ab.00
+  relevance: 3
+  read: false
+
+enhancing_the_seebeck_nadtochiy:
+  type: article
+  title: >-
+    Enhancing the Seebeck effect in Ge/Si through the combination of interfacial
+    design features
+  author:
+  - Nadtochiy, Andriy
+  - Kuryliuk, Vasyl
+  - Strelchuk, Viktor
+  - Korotchenkov, Oleg
+  - Li, Pei-Wen
+  - Lee, Sheng-Wei
+  date: "2019-11-08"
+  serial-number:
+    doi: 10.1038/s41598-019-52654-z
+    issn: 2045-2322
+  parent:
+    type: periodical
+    title: SCIENTIFIC REPORTS
+    volume: 9
+  topic:
+  - 02.ab.00
+  relevance: 4
+  read: true
+
+
+mapping_nanoscale_thermal_tovee:
+  type: article
+  title: >-
+    Mapping nanoscale thermal transfer in-liquid environment-immersion scanning
+    thermal microscopy
+  author:
+  - Tovee, Peter D.
+  - Kolosov, Oleg V.
+  date: "2013-11-22"
+  serial-number:
+    doi: 10.1088/0957-4484/24/46/465706
+    issn: 0957-4484
+  parent:
+    type: periodical
+    title: NANOTECHNOLOGY
+    issue: 46
+    volume: 24
+  topic:  
+  - 01.ad.03
+  - 04.aa
+  relevance: 1
+  read: true
+
+
+direct_nanoscale_imaging_pumarol:
+  type: article
+  title: >-
+    Direct Nanoscale Imaging of Ballistic and Diffusive Thermal Transport in
+    Graphene Nanostructures
+  author:
+  - Pumarol, Manuel E.
+  - Rosamond, Mark C.
+  - Tovee, Peter
+  - Petty, Michael C.
+  - Zeze, Dagou A.
+  - Falko, Vladimir
+  - Kolosov, Oleg V.
+  date: 2012-06
+  page-range: 2906-2911
+  serial-number:
+    doi: 10.1021/nl3004946
+    issn: 1530-6984
+  parent:
+    type: periodical
+    title: NANO LETTERS
+    issue: 6
+    volume: 12
+  topic:
+  - "02"
+  relevance: 3
+  read: false
+
+
+measuring_adhesion_attraction_weisenhorn:
+  type: article
+  title: >-
+    MEASURING ADHESION, ATTRACTION, AND REPULSION BETWEEN SURFACES IN LIQUIDS WITH
+    AN ATOMIC-FORCE MICROSCOPE
+  author:
+  - WEISENHORN, AL
+  - MAIVALD, P
+  - BUTT, HJ
+  - HANSMA, PK
+  date: "1992-05-15"
+  page-range: 11226-11232
+  serial-number:
+    doi: 10.1103/PhysRevB.45.11226
+    issn: 0163-1829
+  parent:
+    type: periodical
+    title: PHYSICAL REVIEW B
+    issue: 19
+    volume: 45
+  topic:
+  - 01.ad.03
+  relevance: 3
+  read: false
+
+quantifying_thermal_transport_spièce:
+  type: article
+  title: >-
+    Quantifying thermal transport in buried semiconductor nanostructures via
+    cross-sectional scanning thermal microscopy
+  author:
+  - Spièce, Jean
+  - Evangeli, Charalambos
+  - Robson, Alexander J.
+  - El Sachat, Alexandros
+  - Haenel, Linda
+  - Alonso, M. Isabel
+  - Garriga, Miquel
+  - Robinson, Benjamin J.
+  - Oehme, Michael
+  - Schulze, Jörg
+  - Alzina, Francesc
+  - Sotomayor Torres, Clivia
+  - Kolosov, Oleg V.
+  date: 2021-06
+  page-range: 10829-10836
+  url: https://doi.org/10.1039/d0nr08768h
+  serial-number:
+    doi: 10.1039/d0nr08768h
+    issn: 2040-3364
+  parent:
+    type: periodical
+    title: Nanoscale
+    issue: 24
+    volume: 13
+  topic:
+  - 01.af.00
+  relevance: 3
+  read: true 
+  related:
+  - direct-measurements-of-gonzalez-munoz
+  - quantifying-anisotropic-thermal-maiti
+
+
+direct_measurements_of_gonzalez_munoz:
+  type: article
+  title: >-
+    Direct Measurements of Anisotropic Thermal Transport in γ-InSe Nanolayers via
+    Cross-Sectional Scanning Thermal Microscopy
+  author:
+  - Gonzalez-Munoz, Sergio
+  - Agarwal, Khushboo
+  - Castanon, Eli G.
+  - Kudrynskyi, Zakhar R.
+  - Kovalyuk, Zakhar D.
+  - Spiece, Jean
+  - Kazakova, Olga
+  - Patane, Amalia
+  - Kolosov, Oleg V.
+  date: 2023-06
+  serial-number:
+    doi: 10.1002/admi.202300081
+    issn: 2196-7350
+  parent:
+    type: periodical
+    title: ADVANCED MATERIALS INTERFACES
+    issue: 17
+    volume: 10
+  topic: 
+  - 01.af
+  - 02.aa
+  relevance: 3
+  read: false
+
+quantifying_anisotropic_thermal_maiti:
+  type: article
+  title: >-
+    Quantifying anisotropic thermal transport in two-dimensional perovskite
+    (PEA2PbI4) through cross-sectional scanning thermal microscopy
+  author:
+  - Maiti, Abhishek
+  - Agarwal, Khushboo
+  - Gonzalez-Munoz, Sergio
+  - Kolosov, Oleg. V.
+  date: "2023-02-03"
+  serial-number:
+    doi: 10.1103/PhysRevMaterials.7.023801
+    issn: 2475-9953
+  parent:
+    type: periodical
+    title: PHYSICAL REVIEW MATERIALS
+    issue: 2
+    volume: 7
+  topic: 
+  - 01.af
+  - 02.aa
+  relevance: 3
+  read: false
+
+quantitative_mapping_nanothermal_spiece:
+  type: thesis
+  title: Quantitative Mapping of Nanothermal Transport Via Scanning Thermal Microscopy
+  author: Spièce, Jean
+  date: 2018
+  url: https://public.ebookcentral.proquest.com/choice/publicfullrecord.aspx?p=5963141
+  serial-number: 
+    doi: 10.1007/978-3-030-30813-1
+  relevance: 2
+  topic:
+  - "01"
+  read: false 
+
+new_methods_for_dobson:
+  type: article
+  title: New Methods for Calibrated Scanning Thermal Microscopy (SThM)
+  author:
+  - Dobson, Phillip S.
+  - Weaver, John M. R.
+  - Mills, Gordon
+  date: 2007
+  page-range: 708-711
+  serial-number:
+    doi: 10.1109/ICSENS.2007.4388498
+  parent:
+    type: proceedings
+    title: SENSORS, 2007 IEEE
+    issue: ""
+    volume: ""
+  topic:
+  - 01.aa.
+  relevance: 3
+  read: false
+
+miniaturized_transformer_bridge_smagowski:
+  type: article
+  title: >-
+    Miniaturized Transformer Bridge Setup for Scanning Thermal Microscopy
+    Applications
+  author:
+  - Smagowski, Piotr
+  - Piasecki, Tomasz
+  - Rudek, Maciej
+  date: 2025
+  serial-number:
+    doi: 10.1109/TIM.2025.3545501
+    issn: 0018-9456
+  parent:
+    type: periodical
+    title: IEEE TRANSACTIONS ON INSTRUMENTATION AND MEASUREMENT
+    volume: 74
+  topic:
+  - 01.aa
+  relevance: 2
+  read: false
+
+temperature_mapping_of_menges:
+  type: article
+  title: Temperature mapping of operating nanoscale devices by scanning probe thermometry
+  author:
+  - Menges, Fabian
+  - Mensch, Philipp
+  - Schmid, Heinz
+  - Riel, Heike
+  - Stemmer, Andreas
+  - Gotsmann, Bernd
+  date: 2016-03
+  serial-number:
+    doi: 10.1038/ncomms10874
+    issn: 2041-1723
+  parent:
+    type: periodical
+    title: NATURE COMMUNICATIONS
+    volume: 7
+  topic: 
+  - 01.ag
+  - 02.aa
+  relevance: 2
+  read: true 
+
+topography_free_sample_ge:
+  type: article
+  title: >-
+    Topography-free sample for thermal spatial response measurement of scanning
+    thermal microscopy
+  author:
+  - Ge, Yunfei
+  - Zhang, Yuan
+  - Weaver, Jonathan M. R.
+  - Zhou, Haiping
+  - Dobson, Phillip S.
+  date: 2015-10
+  page-range: 06FA03
+  url: https://doi.org/10.1116/1.4933172
+  serial-number:
+    doi: 10.1116/1.4933172
+    issn: 2166-2746
+  abstract: >-
+    A novel fabrication technique is described for the production of multimaterial,
+    lithographically defined, topography-free samples for use in experiments to
+    investigate the nature of contrast in scanning probe microscopy (SPM). The approach
+    uses a flat sacrificial substrate as the base for fabrication, which is deleted in
+    the final step. This leaves an exposed, flat surface with patterns of materials
+    contrast defined during the lithography stages. In the example application
+    presented, these are designed to challenge the detection ability of a scanning thermal
+    microscopy (SThM) probe, although many other applications can be envisioned.
+    There are many instances in SPM where images can exhibit topographically induced
+    artifacts. In SThM, these can result in a change of the thermal signal which can
+    easily be misinterpreted as changes in the sample thermal conductivity or
+    temperature. The elimination of these artifacts through postprocessing requires a knowledge
+    of how the probe responds thermal features of differing sizes. The complete
+    sample fabrication process, followed by successful topographic/thermal scanning is
+    demonstrated, showing sub-1.5 nm topography with a clear artifact-free thermal
+    signal from sub-100 nm gold wires. The thermal spatial resolution is determined for
+    the sample materials and probe used in this study to be in the range of 35–75 nm.
+  parent:
+    type: periodical
+    title: Journal of Vacuum Science & Technology B
+    issue: 6
+    volume: 33
+  topic:
+  - 02.aa.01
+  relevance: 2
+  read: true 
+
+
+experimental_identification_of_dong:
+  type: article
+  title: >-
+    Experimental identification of topography-based artifact phenomenon for
+    micro-/nanoscale thermal characterization of polymeric materials in scanning thermal
+    microscopy
+  author:
+  - Dong, Lan
+  - Li, Yifan
+  date: "2022-04-01"
+  serial-number:
+    doi: 10.1063/5.0088360
+  parent:
+    type: periodical
+    title: AIP ADVANCES
+    issue: 4
+    volume: 12
+  topic:
+  - 02.aa.00
+  relevance: 2
+  read: true 
+
+scanning_thermal_profiler_williams:
+  type: article
+  title: SCANNING THERMAL PROFILER
+  author:
+  - WILLIAMS, CC
+  - WICKRAMASINGHE, HK
+  date: "1986-12-08"
+  page-range: 1587-1589
+  serial-number:
+    doi: 10.1063/1.97288
+    issn: 0003-6951
+  parent:
+    type: periodical
+    title: APPLIED PHYSICS LETTERS
+    issue: 23
+    volume: 49
+  topic: 
+  - "01"
+  - 06.ab
+  - "07"
+  relevance: 1
+  read: false
+
+scanning_thermal_microscopy_harnack:
+  type: article
+  title: >-
+    Scanning Thermal Microscopy Method for Self-Heating in Nonlinear Devices and
+    Application to Filamentary Resistive Random-Access Memory
+  author:
+  - Harnack, Nele
+  - Rodehutskors, Sophie
+  - Gotsmann, Bernd
+  date: 2025-02
+  page-range: 5342-5352
+  url: https://doi.org/10.1021/acsnano.4c12784
+  serial-number:
+    doi: 10.1021/acsnano.4c12784
+    issn: 1936-0851
+  abstract: >-
+    Devices with a highly nonlinear resistance-voltage relationship are candidates
+    for neuromorphic computing, which can be achieved by highly temperature dependent
+    processes like ion migration. To explore the thermal properties of such devices,
+    Scanning Thermal Microscopy (SThM) can be employed. However, due to the
+    nonlinearity, the high resolution and quantitative method of AC-modulated SThM cannot
+    readily be used. To this end, an extended nonequilibrium scheme for temperature
+    measurement using SThM is proposed, with which the self-heating of nonlinear devices
+    is studied without the need for calibrating the tip–sample contact for a specific
+    material combination, geometry or roughness. Both a DC and an AC voltage are
+    applied to the device, triggering a periodic temperature rise, which enables the
+    simultaneous calculation of the tip–sample thermal resistance and the device
+    temperature rise. The method is applied to HfO2-based RRAM devices, in which the kinetic
+    processes of filamentary switching are governed by temperature. We image
+    temperature and propagation of thermal waves and extract properties like the number of
+    current filaments, thermal confinement and thermal cross-talk.
+  parent:
+    type: periodical
+    title: ACS Nano
+    issue: 5
+    volume: 19
+  topic: 
+  - 02.ab.01
+  - 01.af.01
+  relevance: 3
+  read: false
+
+
+nanoscale_thermometry_by_menges:
+  type: article
+  title: Nanoscale thermometry by scanning thermal microscopy
+  author:
+  - Menges, Fabian
+  - Riel, Heike
+  - Stemmer, Andreas
+  - Gotsmann, Bernd
+  date: 2016-07
+  serial-number:
+    doi: 10.1063/1.4955449
+    issn: 0034-6748
+  parent:
+    type: periodical
+    title: REVIEW OF SCIENTIFIC INSTRUMENTS
+    issue: 7
+    volume: 87
+  added_at: 2026-11-23 13:31:00.229522077 +00:00
+  topic:
+  - 01.ag
+  relevance: 2
+  read: false
+
+energy_dissipation_and_pop:
+  type: article
+  title: Energy dissipation and transport in nanoscale devices
+  date: 2010-03-18
+  author: Pop, Eric
+  serial-number:
+    doi: 10.1007/s12274-010-1019-z
+  parent: 
+    type: periodical
+    title: Nano Research
+    volume: 3
+    issue: 3
+  added_at: 2026-11-24 13:31:00.229522077 +00:00
+  page-range: 147-169
+  relevance: 2
+  read: false
+  topic:
+  - 05.aa.00
+
+thermal_limitations_due_trivedi:
+  type: article
+  title: Thermal limitations due to semiconductor and packaging in high power switches
+  author:
+  - Trivedi, M
+  - Shenai, K
+  date: 1998
+  page-range: 618-621
+  serial-number:
+    isbn: 0-7803-4797-8
+    issn: 1091-5281
+  note: >-
+    15th Annual IEEE Instrumentation and Measurement Technology Conference on Where
+    Instrumentation is Going (IMTC 98), ST PAUL, MN, MAY 18-21, 1998
+  parent:
+    type: proceedings
+    title: WHERE INSTRUMENTATION IS GOING - CONFERENCE PROCEEDINGS, VOLS 1 AND 2
+    organization: IEEE, Instrumentat & Measurement Soc; IEEE, Twin Cities Sect
+    parent:
+      type: proceedings
+      title: IEEE INSTRUMENTATION & MEASUREMENT TECHNOLOGY CONFERENCE, PROCEEDINGS
+  added_at: 2026-11-24 15:44:26.362743352 +00:00
+  topic:
+  - 05.aa.00
+  relevance: 3
+  read: false
+
+thermal_failure_analysis_li:
+  type: article
+  title: >-
+    Thermal failure analysis in semiconductor devices through integrated
+    multiphysics measurement and modeling
+  author:
+  - Li, Yupu
+  - Fan, Aoran
+  - Zhang, Xiaoyu
+  - Li, Fengyi
+  - Zhang, Xing
+  date: "2026-06-15"
+  serial-number:
+    doi: 10.1016/j.ijheatmasstransfer.2026.128541
+    issn: 0017-9310
+  parent:
+    type: periodical
+    title: INTERNATIONAL JOURNAL OF HEAT AND MASS TRANSFER
+    volume: 261
+  added_at: 2026-11-24 15:45:40.368987260 +00:00
+  topic:
+  - 05.aa.00
+  relevance: 3
+  read: false
+
+influence_of_solder_gao:
+  type: article
+  title: >-
+    Influence of Solder Layer Void on Thermal Stability for Power Semiconductor
+    Device
+  author:
+  - Gao, Wei
+  - Guo, Qiao
+  - Peng, Yuyu
+  - Ren, Min
+  - Zhang, Bo
+  - Cai, Shaofeng
+  date: 2019
+  serial-number:
+    doi: 10.1109/ICEPT47577.2019.245120
+    isbn: 978-1-7281-5064-2
+  note: >-
+    20th International Conference on Electronic Packaging Technology (ICEPT), Hong
+    Kong, HONG KONG, AUG 12-15, 2019
+  parent:
+    type: proceedings
+    title: "ICEPT2019: THE 2019 20TH INTERNATIONAL CONFERENCE ON ELECTRONIC PACKAGING TECHNOLOGY"
+    organization: IMECAS; HKSTP; IEEE Elect Packaging Soc; EMPT
+  added_at: 2026-11-24 15:52:32.545211225 +00:00
+  topic:
+  - 05.aa.00
+  relevance: 3
+  read: false
+
+reliable_and_accurate_ho:
+  type: article
+  title: >-
+    Reliable And Accurate Temperature Measurement Using Scanning Thermal Microscopy
+    With Double Lock-In Amplification
+  author:
+  - Ho, H. W.
+  - Zheng, X. H.
+  - Phang, J. C. H.
+  - Balk, L. J.
+  date: 2009
+  page-range: 804+
+  serial-number:
+    doi: 10.1109/IRPS.2009.5173354
+    isbn: 978-1-4244-2888-5
+  note: >-
+    47th Annual IEEE International Reliability Physics Symposium, Montreal, CANADA,
+    APR 26-30, 2009
+  parent:
+    type: proceedings
+    title: 2009 IEEE INTERNATIONAL RELIABILITY PHYSICS SYMPOSIUM, VOLS 1 AND 2
+    organization: IEEE
+  added_at: 2026-11-25 08:51:47.022958452 +00:00
+  topic:
+  - 01.ag
+  relevance: 3
+  read: false
+
+graphics_cards_based_klapetek:
+  type: article
+  title: >-
+    Graphics cards based topography artefacts simulations in Scanning Thermal
+    Microscopy
+  author:
+  - Klapetek, Petr
+  - Martinek, Jan
+  - Grolich, Petr
+  - Valtr, Miroslav
+  - Kaur, Nupinder Jeet
+  date: 2017-05
+  page-range: 841-850
+  serial-number:
+    doi: 10.1016/j.ijheatmasstransfer.2016.12.036
+    issn: 0017-9310
+  parent:
+    type: periodical
+    title: INTERNATIONAL JOURNAL OF HEAT AND MASS TRANSFER
+    issue: A
+    volume: 108
+  added_at: 2026-11-25 08:53:16.579490337 +00:00
+  topic:
+  - "04"
+  - 01.ag
+  relevance: 3
+  read: false
+
+on_the_limits_metzke:
+  type: article
+  title: On the Limits of Scanning Thermal Microscopy of Ultrathin Films
+  author:
+  - Metzke, Christoph
+  - Frammelsberger, Werner
+  - Weber, Jonas
+  - Kuehnel, Fabian
+  - Zhu, Kaichen
+  - Lanza, Mario
+  - Benstetter, Guenther
+  date: "2020-02-01"
+  serial-number:
+    doi: 10.3390/ma13030518
+  parent:
+    type: periodical
+    title: MATERIALS
+    issue: 3
+    volume: 13
+  added_at: 2026-11-25 08:54:59.452215709 +00:00
+  topic:
+  - 02.aa.01
+  relevance: 3
+  read: false
+
+scanning_thermal_microscopy_majumdar:
+  type: article
+  title: Scanning thermal microscopy
+  author: Majumdar, A
+  date: 1999
+  page-range: 505-585
+  serial-number:
+    doi: 10.1146/annurev.matsci.29.1.505
+    issn: 0084-6600
+  parent:
+    type: periodical
+    title: ANNUAL REVIEW OF MATERIALS SCIENCE
+    volume: 29
+  added_at: 2026-11-25 08:59:28.069216060 +00:00
+  topic:
+  - "07"
+  relevance: 3
+  read: false
+
+methods_for_topography_martinek:
+  type: article
+  title: Methods for topography artifacts compensation in scanning thermal microscopy
+  author:
+  - Martinek, Jan
+  - Klapetek, Petr
+  - Campbell, Anna Charvtova
+  date: 2015-08
+  page-range: 55-61
+  serial-number:
+    doi: 10.1016/j.ultramic.2015.04.011
+    issn: 0304-3991
+  parent:
+    type: periodical
+    title: ULTRAMICROSCOPY
+    volume: 155
+  added_at: 2026-11-25 09:01:43.088532678 +00:00
+  topic:
+  - "04"
+  relevance: 3
+  read: false
+
+direct_imaging_of_qin:
+  type: article
+  title: Direct Imaging of Energy Dissipation in Surface Acoustic Waves
+  author:
+  - Qin, Ludi
+  - Mao, Xuhui
+  - Xu, Hongtao
+  - Chen, Feilin
+  - Mou, Yicheng
+  - Lu, Weikang
+  - Xue, Huanyi
+  - An, Zhenghua
+  date: "2026-11-10"
+  page-range: 29657-29666
+  serial-number:
+    doi: 10.1021/acsnano.6c10736
+    issn: 1936-0851
+  parent:
+    type: periodical
+    title: ACS NANO
+    issue: 44
+    volume: 20
+  added_at: 2026-11-25 09:04:35.080680929 +00:00
+  topic:
+  - 08.aa
+  relevance: 3
+  read: false
+
+algorithms_for_scanning_klapetek:
+  type: article
+  title: ALGORITHMS FOR SCANNING PROBE MICROSCOPY DATA ANALYSIS
+  author: Klapetek, P.
+  date: 2006
+  editor:
+  - Ciarlini, P
+  - Filipe, E
+  - Pavese, F
+  - Perruchet, C
+  - Siebert, BRL
+  page-range: 310-315
+  serial-number:
+    doi: 10.1142/9789812774187\_0039
+    isbn: 978-981-256-674-4
+    issn: 1793-0901
+  note: >-
+    Workshop on Advanced Mathematical and Computational Tools in Metrology, IPQ,
+    Caparica, POLAND, JUN, 2005
+  parent:
+    type: proceedings
+    title: ADVANCED MATHEMATICAL AND COMPUTATIONAL TOOLS IN METROLOGY VII
+    volume: 72
+    parent:
+      type: proceedings
+      title: Series on Advances in Mathematics for Applied Sciences
+  added_at: 2026-11-25 09:06:17.654945495 +00:00
+  topic: 
+  - 04.ad
+  - 04.ae
+  relevance: 3
+  read: false
+
+an_investigation_of_somnath:
+  type: article
+  title: >-
+    An investigation of heat transfer between a microcantilever and a substrate for
+    improved thermal topography imaging
+  author:
+  - Somnath, Suhas
+  - King, William P.
+  date: "2014-09-12"
+  serial-number:
+    doi: 10.1088/0957-4484/25/36/365501
+    issn: 0957-4484
+  parent:
+    type: periodical
+    title: NANOTECHNOLOGY
+    issue: 36
+    volume: 25
+  added_at: 2026-11-25 09:10:39.635444136 +00:00
+  topic: 
+  - "09"
+  - "04"
+  relevance: 3
+  read: false
+
+thermal_induced_deflection_mordue:
+  type: article
+  title: "Thermal induced deflection in atomic force microscopy cantilevers: analysis & solution"
+  author:
+  - Mordue, Christopher W.
+  - Weaver, Jonathan M. R.
+  - Dobson, Phillip S.
+  date: "2023-12-01"
+  serial-number:
+    doi: 10.1088/1361-6501/acf061
+    issn: 0957-0233
+  parent:
+    type: periodical
+    title: MEASUREMENT SCIENCE AND TECHNOLOGY
+    issue: 12
+    volume: 34
+  added_at: 2026-11-25 09:16:26.490081947 +00:00
+  topic: 
+  - 09.aa
+  - 09.ac
+  - 01.ag
+  relevance: 3
+  read: false
+
+nanoscale_temperature_of_hohensee:
+  type: article
+  title: Nanoscale temperature of plasmonic HAMR heads by polymer imprint thermal mapping
+  author:
+  - Hohensee, Gregory T.
+  - Nguyen, Tan
+  - Pek, Ella
+  - Kuang, Wan
+  - Suzer, Ozgun
+  - Finot, Marc
+  date: 2017
+  page-range: 3607-3612
+  serial-number:
+    doi: 10.1557/adv.2017.439
+    issn: 2059-8521
+  parent:
+    type: periodical
+    title: MRS ADVANCES
+    issue: 58–59
+    volume: 2
+  added_at: 2026-11-25 09:22:47.121703088 +00:00
+  topic:
+  - 10.aa
+  relevance: 3
+  read: false
+
+nanoscale_thermal_mapping_kinkhabwala:
+  type: article
+  title: Nanoscale Thermal Mapping of HAMR Heads Using Polymer Imprint Thermal Mapping
+  author:
+  - Kinkhabwala, Anika A.
+  - Staffaroni, Matteo
+  - Suezer, Oezguen
+  - Burgos, Stanley
+  - Stipe, Barry
+  date: 2016-02
+  serial-number:
+    doi: 10.1109/TMAG.2015.2474299
+    issn: 0018-9464
+  note: >-
+    26th Magnetic Recording Conference (TMRC), Univ Minnesota, Minneapolis, MN, AUG
+    17-19, 2015
+  parent:
+    type: periodical
+    title: IEEE TRANSACTIONS ON MAGNETICS
+    organization: >-
+      IEEE Magnet Soc; Seagate Technol; Western Digital Corp; Hoya Corp; Univ
+      Minnesota, Ctr Micromagnet & Informat Technologies; Stanford Univ, Ctr Magnet
+      Nanotechnol; Univ Calif Sandiego, Ctr Magnet Recording Res; Univ Alabama Tuscaloosa, Ctr
+      Mat Informat Technol; Univ Calif Berkeley, Comp Mech Lab; Carnegie Mellon Univ,
+      Data Storage Syst Ctr
+    issue: 2, 1
+    volume: 52
+  added_at: 2026-11-25 09:22:56.689691728 +00:00
+  topic:
+  - 10.aa
+  relevance: 3
+  read: false

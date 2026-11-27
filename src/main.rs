@@ -1,7 +1,13 @@
-use std::{collections::HashMap, process::exit};
+mod args;
 
+use std::{collections::HashMap, process::exit, fs::read_to_string};
+
+use clap::Parser;
 use regex::Regex;
 use chrono::prelude::Local;
+use hayagriva::{Entry, Library, io::from_yaml_str};
+
+use crate::args::Configuration;
 
 fn get_input(arg: &String) -> biblatex::Bibliography {
     let content = match std::fs::read_to_string(arg) {
@@ -33,15 +39,30 @@ fn get_id(hg: &hayagriva::Entry) -> String {
     std::format!("{title}_{author}")
 }
 
-fn main() {
-    let args = std::env::args().collect::<Vec<String>>();
+fn construct_string(citation: HashMap<String, Entry>, config: Configuration) -> String {
+	let yaml = serde_saphyr::to_string(&citation).unwrap();
 
-    if args.len() < 2 {
-        eprintln!("Too few arguments");
-        exit(-1);
-    }
+	let topics = if !config.topic.is_empty() {
+		format!("  topics: \n  - {}", config.topic.join("\n  - "))
+	} else {
+		String::new()
+	};
+	
+	format!(r#"
+{yaml}  added_at: {}
+  relevance: {}
+  read: false{}
+"#, 
+		Local::now().to_string(),
+		config.relevance.unwrap_or("2".to_string()),
+		topics
+	)
+}
+
+fn main() {
+	let config = Configuration::parse();
     
-    let bibtex_in = get_input(&args[1]).into_vec();
+    let bibtex_in = get_input(&config.bib_path).into_vec();
 
     let hg: hayagriva::Entry = match (&bibtex_in[0]).try_into() {
         Err(e) => { eprintln!("Failed to convert: {:?}", e); exit(-1); },
@@ -49,22 +70,21 @@ fn main() {
     };
 
     let mut citation = HashMap::new();
-    citation.insert(get_id(&hg), hg);
-    let yaml = serde_saphyr::to_string(&citation).unwrap();
-    print!("{yaml}");
-
-    let time = Local::now();
-    println!("  added_at: {}", time.to_string());
-
-    let mut topic = "null".to_string(); 
-    if args.len() >= 3 { topic = args[2].clone(); }
-    println!("  topic: \n  - \"{}\"", topic);
-
-    let mut relevance: String = "3".to_string();
-    if args.len() >= 4 { relevance = args[3].clone(); }
-    println!("  relevance: {}", relevance);
+    let mut id = get_id(&hg);
     
-    println!("  read: false");
+    config.hg_path.as_ref().inspect(|hg_path| {
+	    let existing_hg = from_yaml_str(&read_to_string(hg_path).unwrap()).unwrap();
+		let test = |hg: &Library, id: &String | { hg.iter().any(|entry| { entry.key() == id }) };
 
-    println!("");
+		let mut suffix = 0;
+		let original_id = id.clone();
+		while test(&existing_hg, &id) { 
+			eprintln!("WARNING: duplicate ID found: {}", id);
+			suffix += 1; 
+			id = format!("{}_{}", original_id, suffix);
+		}
+    });
+
+    citation.insert(id, hg);
+    println!("{}", construct_string(citation, config));
 }
